@@ -1,0 +1,162 @@
+/* General body styling */
+body {
+    background-image: url("wp12876562-banana-4k-wallpaper.jpg"); /* Sets background image */
+    background-size: cover; /* Covers entire body */
+    background-position: center; /* Centers background image */
+    font-family: 'Poppins', Arial, sans-serif; /* Sets font family */
+    text-align: center; /* Centers text content */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3rem; /* Sets font size to 3 root em units */
+    color: #ffcc00; /* Sets text color to yellow shade */
+    margin-top: 20px; /* Adds top margin */
+    text-shadow: 3px 3px 6px #000, 0 0 10px #ffcc00; /* Adds text shadow effect */
+    font-weight: bold; /* Makes font bold */
+}
+
+/* Section styling for login, register, and game areas */
+#login, #register, #game {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+    margin: 50px auto; /* Centers sections with vertical margins */
+    padding: 30px; /* Adds padding inside sections */
+    border-radius: 15px; /* Rounds section corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+    max-width: 500px; /* Limits maximum section width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Add floating effect on hover */
+#login:hover, #register:hover, #game:hover {
+    transform: scale(1.02); /* Slightly enlarges on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+}
+
+/* General form input styling */
+form input, select {
+    width: 80%; /* Sets width to 80% of container */
+    padding: 12px; /* Adds padding inside inputs */
+    margin: 15px 0; /* Adds vertical margins */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounds input corners */
+    font-size: 1.1rem; /* Sets font size */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition on focus */
+}
+
+form input:focus, select:focus {
+    border-color: #4caf50; /* Changes border color when focused */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6); /* Adds glow effect when focused */
+    outline: none; /* Removes default focus outline */
+}
+
+/* Styling for the number selection box */
+form input[type="number"] {
+    -webkit-appearance: none; /* Removes default WebKit styling */
+    -moz-appearance: textfield; /* Removes Firefox spinner */
+    appearance: none; /* Standardizes appearance */
+
+    width: 90%; /* Sets responsive width */
+    max-width: 150px; /* Limits maximum width */
+    padding: 12px; /* Adds padding inside */
+    margin: 15px auto; /* Centers with vertical margins */
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 25px; /* Creates pill shape */
+    font-size: 1.2rem; /* Increases font size */
+    font-weight: bold; /* Makes font bold */
+    text-align: center; /* Centers text */
+    background: linear-gradient(45deg, #ffffff, #f7f7f7); /* Subtle gradient background */
+    color: #333; /* Dark gray text color */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+form input[type="number"]:hover {
+    border-color: #81c784; /* Lighter green border on hover */
+    background: linear-gradient(45deg, #f9f9f9, #e8f5e9); /* Changes gradient on hover */
+    box-shadow: 0 4px 10px rgba(129, 199, 132, 0.4); /* Enhances shadow on hover */
+}
+
+form input[type="number"]:focus {
+    border-color: #ffcc00; /* Yellow border when focused */
+    background: linear-gradient(45deg, #fff8e1, #ffe082); /* Changes gradient when focused */
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.6); /* Adds glow effect when focused */
+    outline: none; /* Removes default focus outline */
+}
+
+/* Button styling */
+button {
+    padding: 12px 25px; /* Adds padding inside buttons */
+    border: none; /* Removes default button border */
+    border-radius: 8px; /* Rounds button corners */
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Gradient background */
+    color: white; /* White text color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1.1rem; /* Sets font size */
+    font-weight: bold; /* Makes text bold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #388e3c, #66bb6a); /* Changes gradient on hover */
+    transform: translateY(-2px); /* Slightly lifts button on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Resets position when active */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduces shadow when active */
+}
+
+/* Logout button styling */
+#logout {
+    background-color: #f44336; /* Red background for logout */
+    margin-top: 10px; /* Adds top margin */
+}
+
+#logout:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Gameplay area and API URL fixes */
+#quest {
+    max-width: 100%; /* Prevents exceeding container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures block display */
+    margin: 10px auto; /* Centers with margins */
+    border-radius: 10px; /* Rounds corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Timer styling */
+#timer {
+    font-size: 1.2rem; /* Increases font size */
+    font-weight: bold; /* Makes text bold */
+    margin-bottom: 15px; /* Adds bottom margin */
+    color: #333; /* Dark gray text color */
+}
+
+/* Message styling */
+#message {
+    margin-top: 15px; /* Adds top margin */
+    padding: 15px; /* Adds padding inside */
+    border-radius: 8px; /* Rounds corners */
+    font-weight: bold; /* Makes text bold */
+    text-align: center; /* Centers text */
+}
+
+.success {
+    background-color: #d4edda; /* Light green background for success */
+    color: #155724; /* Dark green text for success */
+    border: 1px solid #c3e6cb; /* Light green border for success */
+}
+
+.error {
+    background-color: #f8d7da; /* Light red background for error */
+    color: #721c24; /* Dark red text for error */
+    border: 1px solid #f5c6cb; /* Light red border for error */
+}
